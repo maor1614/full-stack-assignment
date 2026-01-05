@@ -7,4 +7,5 @@ export default new DataSource({
   database: 'db.sqlite',
   entities: [User, Task],
   migrations: ['src/database/migrations/*.ts'],
+  synchronize: false,
 });
